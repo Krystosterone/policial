@@ -29,5 +29,9 @@ describe Policial do
     it 'includes Ruby' do
       expect(Policial::STYLE_GUIDES).to include(Policial::StyleGuides::Ruby)
     end
+
+    it 'includes CoffeeScript' do
+      expect(Policial::STYLE_GUIDES).to include(Policial::StyleGuides::CoffeeScript)
+    end
   end
 end

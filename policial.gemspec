@@ -17,4 +17,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'octokit', '~> 3.8'
   spec.add_dependency 'rubocop', '~> 0.29'
+  spec.add_dependency 'coffeelint', '~> 1.9'
 end

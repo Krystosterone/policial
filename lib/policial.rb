@@ -13,6 +13,7 @@ require 'policial/pull_request_event'
 require 'policial/repo_config'
 require 'policial/style_checker'
 require 'policial/style_guides/base'
+require 'policial/style_guides/coffee_script'
 require 'policial/style_guides/ruby'
 require 'policial/style_guides/unsupported'
 require 'policial/unchanged_line'
@@ -25,5 +26,5 @@ require 'policial/violation'
 module Policial
   extend OctokitClient
 
-  STYLE_GUIDES = [Policial::StyleGuides::Ruby]
+  STYLE_GUIDES = [Policial::StyleGuides::Ruby, Policial::StyleGuides::CoffeeScript]
 end
